@@ -1,0 +1,8 @@
+127.0.0.1 - - [30/May/2018:17:07:14 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [30/May/2018:17:07:16 +0530] "GET /FilterDemo/index.jsp HTTP/1.1" 200 302
+0:0:0:0:0:0:0:1 - - [30/May/2018:17:07:16 +0530] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [30/May/2018:17:07:39 +0530] "GET /FilterDemo/servlet?name=satyam HTTP/1.1" 404 1096
+0:0:0:0:0:0:0:1 - - [30/May/2018:17:08:43 +0530] "GET /FilterDemo/index.jsp HTTP/1.1" 200 306
+0:0:0:0:0:0:0:1 - - [30/May/2018:17:08:48 +0530] "GET /FilterDemo/ServletDemo?name=satyam HTTP/1.1" 200 30
+0:0:0:0:0:0:0:1 - - [30/May/2018:17:10:28 +0530] "GET /FilterDemo/index.jsp HTTP/1.1" 200 306
+0:0:0:0:0:0:0:1 - - [30/May/2018:17:10:29 +0530] "GET /FilterDemo/ServletDemo?name=satyam HTTP/1.1" 200 64

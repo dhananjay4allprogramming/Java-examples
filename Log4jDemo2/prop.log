@@ -1,0 +1,5 @@
+0   		[main]		FATAL		com.demo.Log4jDemo2  22/36/2018 11:36:15 - this is fatal from properties
+2   		[main]		ERROR		com.demo.Log4jDemo2  22/36/2018 11:36:15 - This is error from properties
+2   		[main]		WARN 		com.demo.Log4jDemo2  22/36/2018 11:36:15 - This is warh from properties
+3   		[main]		INFO 		com.demo.Log4jDemo2  22/36/2018 11:36:15 - This is info fron properties
+3   		[main]		DEBUG		com.demo.Log4jDemo2  22/36/2018 11:36:15 - This is debug from properties

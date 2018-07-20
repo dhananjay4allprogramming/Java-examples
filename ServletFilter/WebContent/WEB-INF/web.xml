@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>ServletFilter</display-name>
+	<!-- <filter> <filter-name>demoFilter</filter-name> <filter-class>com.demo.MyFilter</filter-class> 
+		</filter> <filter-mapping> <filter-name>demoFilter</filter-name> <url-pattern>/myFilter</url-pattern> 
+		</filter-mapping> <filter> <filter-name>demoFilter2</filter-name> <filter-class>com.demo.My</filter-class> 
+		</filter> <filter-mapping> <filter-name>demoFilter2</filter-name> <url-pattern>/myFilter</url-pattern> 
+		</filter-mapping> <servlet> <servlet-name>myFilter</servlet-name> <servlet-class>com.demo.FltTest</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>myFilter</servlet-name> <url-pattern>/myFilter</url-pattern> 
+		</servlet-mapping> <servlet> <servlet-name>secondFilter</servlet-name> <servlet-class>com.demo.SeconServlet</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>secondFilter</servlet-name> <url-pattern>/secondFilter</url-pattern> 
+		</servlet-mapping> -->
+
+	<filter>
+		<filter-name>filter1</filter-name>
+		<filter-class>com.demo.MyFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>filter1</filter-name>
+		<url-pattern>/servlet1</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>servlet1</servlet-name>
+		<servlet-class>com.demo.FltTest</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>servlet1</servlet-name>
+		<url-pattern>/servlet1</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

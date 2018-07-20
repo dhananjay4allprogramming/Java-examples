@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.employees.Employee" table="employees">
+    		<id name="empId" column="emp_id"/>
+    		<discriminator column="child_class" type="string"/>
+    		<property name="employeeName" column="emp_name"/>
+    		
+    		<subclass name="com.employees.Devloper" discriminator-value="dev">
+    			<property name="desiganation" column="dev_desi"/>
+    			<property name="role" column="dev_role"/>
+    		</subclass>
+    		
+    		<subclass name="com.employees.Tester" discriminator-value="test">
+    			<property name="desiganation" column="test_desi"/>
+    			<property name="role" column="test_role"/>
+    		</subclass>
+    	</class>
+    </hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.biDirectonal.Vendor" table="bi_vendor">
+    		<id name="vendorId" column="vendor_id"/>
+    		<property name="vendorName" column="vendor_name"/>
+    		<property name="vendirAddress" column="vendir_address"/>
+    		<set name="customers"  cascade="all" inverse="true">
+    			<key column="vendor_fk"/>
+    			<one-to-many class="com.biDirectonal.Customer"/>
+    		</set>
+    	</class>
+    </hibernate-mapping>

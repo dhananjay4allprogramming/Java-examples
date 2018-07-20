@@ -1,0 +1,65 @@
+package com.hql;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
+
+
+public class App {
+	public static void main(String[] args) {
+		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+		Session session = sessionFactory.openSession();
+		Transaction transaction = session.beginTransaction();
+		Employee employee = new Employee();
+		String fName ="Satyam";
+		String lName = "Panday";
+		try
+		{
+			//Employee employee = session.get(Employee.class, new Integer(1002));
+			//System.out.println(employee);		
+			
+			/**
+			 * HQL demo start
+			 */
+			
+			//String hql = "from Employee";
+			//String hql = "select e.firstName,e.lastName from Employee e";
+			//String hql = "from Employee e where e.employeeNumber=1002";
+			//String hql = "from Employee e where e.employeeNumber > 1002 order by  e.firstName DESC ";
+			//String hql = "select sum(e.employeeNumber), e.officeCode from Employee e group by e.officeCode";
+			//String hql = "update Employee e set e.firstName = :aa, e.lastName = :bb where employeeNumber = 1002";
+			//String hql = "update Employee e set e.firstName = ? ,e.lastName = ? where employeeNumber = 1076";
+			String hql = "delete from Employee e where e.firstName='satyam'";
+			Query query = session.createQuery(hql);
+			/*query.setParameter("aa", fName);
+			query.setParameter("bb", lName);*/
+			/*query.setParameter(0, fName);
+			query.setParameter(1, lName);
+			int count = query.executeUpdate();
+			if(count > 0)
+				System.out.println("update success...");*/
+			transaction.commit();
+			
+			// select e.firstName,e.lastName from Employee
+			/*List<Object[]> list = query.list();
+				for(Object[] emp : list) {
+				Long sum = (Long)emp[0];
+				String firstName =(String) emp[1];
+				//String lsatName = (String)emp[2];
+				System.out.println(firstName+"   "+sum);
+			}*/
+			
+		//	List list = query.list();
+		//	System.out.println(list);
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		session.close();
+		sessionFactory.close();
+	}
+}

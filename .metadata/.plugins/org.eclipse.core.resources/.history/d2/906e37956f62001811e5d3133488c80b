@@ -1,0 +1,43 @@
+package com.relation;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class OneToMany {
+	public static void main(String[] args) {
+		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		Session session = factory.openSession();
+		
+		Vendor vendor = new Vendor();
+		vendor.setVendorId(101);
+		vendor.setVendorName("Dhananjay panday");
+		
+		Customer customer = new Customer();
+		customer.setCustomerId(501);
+		customer.setCustomerName("Satyam kumar");
+		
+		Customer customer2 = new Customer();
+		customer2.setCustomerId(502);
+		customer2.setCustomerName("ram kumar");
+		
+		Customer customer3 = new Customer();
+		customer3.setCustomerId(503);
+		customer3.setCustomerName("krishn kumar");
+		
+		Set set = new HashSet();
+		set.add(customer);
+		set.add(customer2);
+		set.add(customer3);
+		
+		vendor.setChildren(set);
+		
+		
+		Transaction transaction = session.beginTransaction();
+		
+	}
+}

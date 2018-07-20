@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.crud.CrudDemo&apos; to &apos;Search&apos;&#x0D;&#x0A;- Original project: &apos;ElasticSutiDesk&apos;&#x0D;&#x0A;- Original element: &apos;com.crud.CrudDemo&apos;&#x0D;&#x0A;- Renamed element: &apos;com.crud.Search&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CrudDemo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.crud{CrudDemo.java[CrudDemo" matchStrategy="1" name="Search" qualified="false" references="true" similarDeclarations="false" stamp="1521431920217" textual="false" version="1.0"/>
+</session>

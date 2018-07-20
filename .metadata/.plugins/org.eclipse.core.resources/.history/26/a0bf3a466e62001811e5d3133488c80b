@@ -1,0 +1,5 @@
+package com.relation;
+
+public class OneToMany {
+
+}

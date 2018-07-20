@@ -1,0 +1,4 @@
+Hello Sir 
+
+	I am dhananjay panday and to day i done my ajax calling using simple javascript
+	and jquary.

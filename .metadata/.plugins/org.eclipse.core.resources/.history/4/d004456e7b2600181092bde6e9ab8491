@@ -1,0 +1,35 @@
+package com.dw.ElasticsearchDemo1;
+
+import java.io.IOException;
+import java.util.Collections;
+
+import org.apache.http.Header;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpHeaders;
+import org.apache.http.HttpHost;
+import org.apache.http.entity.ContentType;
+import org.apache.http.message.BasicHeader;
+import org.apache.http.nio.entity.NStringEntity;
+import org.apache.http.util.EntityUtils;
+import org.elasticsearch.client.Response;
+import org.elasticsearch.client.RestClient;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args ) throws IOException
+    {
+        RestClient restClient = RestClient.builder(new HttpHost("localhost",2900,"http"),
+        		new HttpHost("localhost", 9205, "http")).build();
+        
+        Header headers[] = { new BasicHeader(HttpHeaders.CONTENT_TYPE, "application/json"),
+				new BasicHeader("Role", "Read") };
+        
+        HttpEntity entity = new NStringEntity("{\"query\":{\"match\":{\"name\":\"dhananjay\"}}}",ContentType.APPLICATION_JSON);
+        Response response = restClient.performRequest("GET", "/myindex/_search", Collections.singletonMap("pretty", "true"),entity);    
+        System.out.println(EntityUtils.toString(entity));
+    }
+}

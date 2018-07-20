@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\dhananjayp\Desktop\Quartz2Example"/>
+			<item value="C:\Users\dhananjayp\Downloads\jQuery-AJAX-Web-Application\jQuery-AJAX-Web-Application"/>
+			<item value="C:\Users\dhananjayp\Downloads\examples-master\Search\recipe_search_java"/>
+			<item value="C:\Users\dhananjayp\Downloads\springboot-elasticsearch-example"/>
+			<item value="C:\Users\dhananjayp\Downloads\es-java-client-sample-master\es-java-client-sample-master"/>
+			<item value="C:\Users\dhananjayp\Downloads\es-demo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="internal" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Test"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Test"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeVersion">
+			<item value="1.0"/>
+		</list>
+		<list key="archetypeGroupId">
+			<item value="aa"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="aaa"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value="http://repo.maven.apache.org/maven2/archetype-catalog.xml"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
+		<list key="catalogUrl">
+			<item value="http://repo.maven.apache.org/maven2/archetype-catalog.xml"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\Eclipse Workspace(Survey)\HQL"/>
+			<item value="D:\Eclipse Workspace(Survey)\HibernateRelationship"/>
+			<item value="D:\Eclipse Workspace(Survey)\HibernateBi-derectional"/>
+			<item value="D:\Eclipse Workspace(Survey)\ElasticSutiDesk"/>
+			<item value="D:\Eclipse Workspace(Survey)\HibernateTest1"/>
+			<item value="D:\Eclipse Workspace(Survey)\HibernateTest"/>
+			<item value="D:\Eclipse Workspace(Survey)\HibernateLoad"/>
+			<item value="D:\Eclipse Workspace(Survey)\HibernateDemo2"/>
+			<item value="D:\Eclipse Workspace(Survey)\Test"/>
+			<item value="D:\Eclipse Workspace(Survey)\HibernateDemo1"/>
+			<item value="D:\Eclipse Workspace(Survey)\Hibernate-Struts1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.Struts2Pagination"/>
+			<item value="com.BarcodeAndPDF"/>
+			<item value="com.BarCodeAndPDF"/>
+			<item value="com.java4sBidirecctionalDemo"/>
+			<item value="com.HibernateBi_derectional"/>
+			<item value="com.hibernate_OneToOne"/>
+			<item value="com.HibernateManyToOneRelation"/>
+			<item value="com.Hibernate_criteria"/>
+			<item value="com.ElasticPagination"/>
+			<item value="com.ElasticsearchPagination"/>
+			<item value="com.Elasticsearch_pagination"/>
+			<item value="com.CRON_Expression"/>
+			<item value="hibernate"/>
+			<item value="hibernate.HQL"/>
+			<item value="hibernate.Hibernate_table_per_class"/>
+		</list>
+		<list key="groupId">
+			<item value="com"/>
+			<item value="hibernate"/>
+			<item value="hibernateLoad"/>
+			<item value="mail"/>
+			<item value="logDemo"/>
+			<item value="struts"/>
+			<item value="elastic"/>
+			<item value="Elasticsearch"/>
+		</list>
+		<list key="artifactId">
+			<item value="Struts2Pagination"/>
+			<item value="BarcodeAndPDF"/>
+			<item value="BarCodeAndPDF"/>
+			<item value="java4sBidirecctionalDemo"/>
+			<item value="HibernateBi-derectional"/>
+			<item value="hibernate-OneToOne"/>
+			<item value="HibernateManyToOneRelation"/>
+			<item value="Hibernate-criteria"/>
+			<item value="ElasticPagination"/>
+			<item value="ElasticsearchPagination"/>
+			<item value="Elasticsearch_pagination"/>
+			<item value="CRON_Expression"/>
+			<item value="HQL"/>
+			<item value="Hibernate-table-per-class"/>
+			<item value="hibernate-to-subclass-hi"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

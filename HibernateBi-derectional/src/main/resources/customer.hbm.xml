@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.biDirectonal.Customer" table="bi_customer">
+    		<id name="customerId" column="customer_id"/>
+    		<property name="customerName" column="customer_name"/>
+    		<property name="customerAddress" column="customer_address"/>
+    		<property name="vendorIdFK" column="vendor_fk" insert="false"/>
+    		<many-to-one name="perantObjecct" column="parent_id" cascade="all"/>
+    	</class>
+    </hibernate-mapping>

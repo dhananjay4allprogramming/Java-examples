@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.mantyToOne.Customer" table="customer">
+    		<id name="customerId" column="customerId"/>
+    		<property name="customerName" column="customerName"/>
+    		<many-to-one name="vendor" cascade="all" class="com.mantyToOne.Vendor" column="forevenId"/>
+    	</class>
+    </hibernate-mapping>

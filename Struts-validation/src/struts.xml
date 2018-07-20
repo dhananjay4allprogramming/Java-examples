@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+<constant name="struts-devMod" value="true"></constant>
+	<package name="default" extends="struts-default">
+		<action name="val_*" class="com.suti.validation.ValidationAction" method="{1}">
+			<result name="loginSuccess">/pages/home.jsp</result>
+			<result name="loginFail">/pages/invalid.jsp</result>
+			<result name="registerSuccess">/pages/welcome.jsp</result>
+		</action>
+	</package>
+</struts>

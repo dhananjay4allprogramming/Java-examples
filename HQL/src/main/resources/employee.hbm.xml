@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.hql.Employee" table="employees">
+    		<id name="employeeNumber" column="employeeNumber" type="java.lang.Integer"> <generator class="native"/></id>
+    		<property name="lastName" column="lastName" type="java.lang.String"/>
+    		<property name="firstName" column="firstName" type="java.lang.String"/>
+    		<property name="extension" column="extension" type="java.lang.String"/>
+    		<property name="officeCode" column="officeCode" type="java.lang.String"/>
+    		<property name="reportsTo" column="reportsTo" type="java.lang.Integer"/>
+    		<property name="jobTitle" column="jobTitle" type="java.lang.String"/>
+    		<property name="email" column="email" type="java.lang.String"/>
+    	</class>
+    </hibernate-mapping>

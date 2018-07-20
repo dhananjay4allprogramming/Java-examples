@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+	
+	<tiles-definitions>
+	
+		<definition name="baseLayout" template="/baseLayout.jsp">
+			<put-attribute name="title" value="tiles-demo2"/>
+			<put-attribute name="header" value="/header.jsp"/>
+			<put-attribute name="menu" value="/menu.jsp"/>
+			<put-attribute name="body" value="/body.jsp"/>
+			<put-attribute name="footer" value="/footer.jsp"/>
+		</definition>
+		
+		<definition name="/login.tiles" extends="baseLayout">
+			<put-attribute name="titles" value="login"/>
+			<put-attribute name="body" value="/login.jsp"/>
+		</definition>
+		
+		<definition name="/about.tiles" extends="baseLayout">
+			<put-attribute name="title" value="about"/>
+			<put-attribute name="body" value="/about.jsp"/>
+		</definition>
+		
+		<definition name="/contact.tiles" extends="baseLayout">
+			<put-attribute name="title" value="contact"/>
+			<put-attribute name="body" value="/contact.jsp"/>
+		</definition>
+		
+		<definition name="/home.tiles" extends="baseLayout">
+			<put-attribute name="title" value="home"/>
+			<put-attribute name="body" value="/home.jsp"/>
+		</definition>
+		
+		<definition name="/invalid.tiles" extends="baseLayout">
+			<put-attribute name="title" value="invalid"/>
+			<put-attribute name="body" value="/invalid.jsp"/>
+		</definition>
+		
+	</tiles-definitions>

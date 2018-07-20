@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="com.employees.Employee" table="emp_subclass">
+    		<id name="empId" column="emp_id"/>
+    		<property name="employeeName" column="emp_name"/>
+    		
+    		<joined-subclass name="com.employees.Devloper"  table="devloper_subclass">
+    			<key column="emp_id"/>
+    			<property name="desiganation" column="desiganation"/>
+    			<property name="role" column="role"/>
+    		</joined-subclass>
+    		
+    		<joined-subclass name="com.employees.Tester" table="tester_subclass">
+    			<key column="emp_id"/>
+    			<property name="desiganation" column="desiganation"/>
+    			<property name="role" column="role"/>
+    		</joined-subclass>
+    	</class>
+    </hibernate-mapping>

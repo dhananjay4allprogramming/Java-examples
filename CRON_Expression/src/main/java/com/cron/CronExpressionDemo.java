@@ -1,0 +1,24 @@
+package com.cron;
+
+import org.quartz.CronScheduleBuilder;
+import org.quartz.JobBuilder;
+import org.quartz.JobDetail;
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+import org.quartz.Trigger;
+import org.quartz.TriggerBuilder;
+import org.quartz.impl.StdSchedulerFactory;
+
+public class CronExpressionDemo {
+	public static void main(String[] args) throws SchedulerException {
+		JobDetail job = JobBuilder.newJob(MyJob.class).withIdentity("cronDemo", "grp").build();
+		JobDetail job2 = JobBuilder.newJob(MyJob2.class).withIdentity("dem", "grp").build();
+		Trigger trigger = TriggerBuilder.newTrigger().withIdentity("trigg", "tigG").withSchedule(CronScheduleBuilder.cronSchedule("0/5 * * * * ?")).build();
+		Trigger trigger2 = TriggerBuilder.newTrigger().withIdentity("tig","tigP").withSchedule(CronScheduleBuilder.cronSchedule("0/5 * * * * ?")).build();
+		Scheduler scheduler = new StdSchedulerFactory().getScheduler();
+		scheduler.scheduleJob(job,trigger);
+		scheduler.scheduleJob(job2, trigger2);
+		scheduler.start();
+		System.out.println("working ...........................");
+	}
+}
